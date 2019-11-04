@@ -286,10 +286,20 @@ nav li{
   left: 15%;
   width: 70%;
   opacity: 0;
+  border-radius: 4px;
+  background: #10101040;
+}
+
+.caption h3,h5{
+  color: #f3b93e;
+  text-shadow: 1px 1px 1px #000000;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .slider .slides li .caption p {
   color: #e0e0e0;
+
 }
 
 .slider .slides li.active {
@@ -353,6 +363,22 @@ nav li{
     top: -54px;
 }
 
+.info_section::before{
+    content: '';
+    position: absolute;
+    border-top: 2px #f3b93e solid;
+    top: -4px;
+    width: 100%;
+}
+
+/*.info_section::after{
+    content: '';
+    position: absolute;
+    border-bottom: 2px #f3b93e solid;
+    bottom: -4px;
+    width: 100%;
+}*/
+
 .info_text{
 	padding: 32px 8px;
 	position: relative;
@@ -365,6 +391,10 @@ nav li{
 	text-align: center;
 	color: #4c4141;
     font-weight: 400;
+}
+
+.info_text p:last-child{
+  width:300px;
 }
 
 .info_text .second{
@@ -445,3 +475,21 @@ nav li{
     background-image: url(img/bigbackground.jpg);
 }
 
+
+
+
+
+
+
+
+@media (min-width: 400px){
+  .info_section {
+    background-color: #f3b93e;
+    transform: skew(0deg, -9deg);
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    height: 328px;
+    top: -51px;
+  }
+}
