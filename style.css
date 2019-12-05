@@ -11,12 +11,15 @@ body{
 }
 
 header{
-	position: relative;
+	/*position: relative;*/
+    position: fixed;
+    z-index: 99999999;
+    width: 100%;
 }
 
 .menu_wrap{
 	background-color: #000;
-	border-bottom: 2px solid;
+	border-bottom: 1px solid;
 	border-color: #969595;
 	position: relative;
 }
@@ -80,9 +83,10 @@ header{
     height: 44px;
     position: absolute;
     background-image: url(img/light2.png);
-    background-size: cover;
-    left: 8px;
-    top: 28px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 16px;
+    top: 26px;
     transition: all 1s ease-in-out;
     filter: contrast(120%);
 }
@@ -350,7 +354,7 @@ nav li{
 	/*height: 700px;*/
 	position: relative;
 
-  background-color: #f2f2f29c;
+  /*background-color: #f2f2f29c;*/
 }
 
 .info_section{
@@ -444,6 +448,8 @@ nav li{
 .features_container h3{
 	margin: 0 0 8px;
 	text-transform: uppercase;
+  color: #f3b93e;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .features_container h3::after{
@@ -458,6 +464,8 @@ nav li{
 	margin: 0 0 32px;
 	text-align: center;
 	width: 64%;
+  color: #f3b93e;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .features_container i:hover{
